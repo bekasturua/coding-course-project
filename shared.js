@@ -10,19 +10,19 @@ var ctaButton = document.querySelector(".main-nav__item--cta");
 
 // console.dir(backdrop);
 for (var i = 0; i < selectPlanButtons.length; i++) {
-  selectPlanButtons[i].addEventListener("click", function() {
+  selectPlanButtons[i].addEventListener("click", function () {
     // modal.style.display = "block";
     // backdrop.style.display = "block";
     // modal.className = 'open'; // This will actually overwrite the complete class list
     modal.classList.add("open");
     backdrop.style.display = "block";
-    setTimeout(function() {
+    setTimeout(function () {
       backdrop.classList.add("open");
     }, 10);
   });
 }
 
-backdrop.addEventListener("click", function() {
+backdrop.addEventListener("click", function () {
   // mobileNav.style.display = 'none';
   mobileNav.classList.remove("open");
   closeModal();
@@ -39,29 +39,29 @@ function closeModal() {
     modal.classList.remove("open");
   }
   backdrop.classList.remove("open");
-  setTimeout(function() {
+  setTimeout(function () {
     backdrop.style.display = "none";
   }, 200);
 }
 
-toggleButton.addEventListener("click", function() {
+toggleButton.addEventListener("click", function () {
   // mobileNav.style.display = 'block';
   // backdrop.style.display = 'block';
   mobileNav.classList.add("open");
   backdrop.style.display = "block";
-  setTimeout(function() {
+  setTimeout(function () {
     backdrop.classList.add("open");
   }, 10);
 });
 
-ctaButton.addEventListener('animationstart', function(event) {
-  console.log('Animation started', event);
-})
+ctaButton.addEventListener("animationstart", function (event) {
+  console.log("Animation started", event);
+});
 
-ctaButton.addEventListener('animationend', function(event) {
-  console.log('Animation ended', event);
-})
+ctaButton.addEventListener("animationend", function (event) {
+  console.log("Animation ended", event);
+});
 
-ctaButton.addEventListener('animationiteration', function(event) {
-  console.log('Animation iteration', event);
-})
+ctaButton.addEventListener("animationiteration", function (event) {
+  console.log("Animation iteration", event);
+});
