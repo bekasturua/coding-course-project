@@ -18,12 +18,10 @@ body {
   grid-template-areas: "header"
                        "main"
                        "footer";
-  /* padding-top: 3.5rem; */
   height: 100%;
 }
 
 main {
-  /* grid-row: 2 / 3; */
   grid-area: main;
 }
 
@@ -79,13 +77,11 @@ main {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  /* width: 20px; */
 }
 
 .main-header__brand img {
   height: 2.5rem;
   vertical-align: middle;
-  /* width: 100%; */
 }
 
 .main-nav {
@@ -152,7 +148,6 @@ main {
   background: black;
   padding: 2rem;
   margin-top: 3rem;
-  /* grid-row: 3 / 4; */
   grid-area: footer;
 }
 

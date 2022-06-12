@@ -12,8 +12,6 @@ var ctaButton = document.querySelector(".main-nav__item--cta");
 for (var i = 0; i < selectPlanButtons.length; i++) {
   selectPlanButtons[i].addEventListener("click", function () {
     // modal.style.display = "block";
-    // backdrop.style.display = "block";
-    // modal.className = 'open'; // This will actually overwrite the complete class list
     modal.classList.add("open");
     backdrop.style.display = "block";
     setTimeout(function () {
